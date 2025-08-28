@@ -10,12 +10,12 @@ class Stack():
         else:
             print("the stack is full")
     def pop(self):
-        if self.size == 0:
+        if self.size() == 0:
             print("the stack is empty")
         else:
-            return self.stack.pop(-1)
+            self.stack.pop(-1)
     def top(self):
-        if self.size == 0:
+        if self.size() == 0:
             print("the stack is empty")
         else:
             return self.stack[-1]
